@@ -1,0 +1,108 @@
+<html>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Welcome to GreyHat from UCSC IEEE Branch</title>
+<META NAME="Keywords" CONTENT="Hacker Test, hacking game, Test your Hack Skills, Security, Hacking, Cracking, Web Security, how to hack, learn to hack, hacking for fun, fun hacking, hack me, hack, hacker, blackhat, how to be a blackhat, hack game">
+<META NAME="Description" CONTENT="Can you hack web sites? Do you want to test your hacking skills? Bring it on and check out this Hacker Test of 20 levels!">
+<LINK REL="stylesheet" HREF="style.css" TYPE="text/css">
+
+<script language="Javascript"><!--
+// methanata ape event eke description eka dapan array ekata
+var tl=new Array(
+"\nThis is event GreyHat", 
+"\nFrom UCSC IEEE Group", 
+"\nAdd anything to this array"
+// Do not add a comma (,) at the end of the last row of text. 
+);
+var speed=1;
+var index=0; text_pos=0;
+var str_length=tl[0].length;
+var contents, row;
+function password()
+{
+  contents='';
+  row=Math.max(0,index-9);
+  while(row<index)
+    contents += tl[row++] + '\r\n';
+  document.forms[0].elements[0].value = contents + tl[index].substring(0,text_pos) + "_";
+  if(text_pos++==str_length)
+  {
+    text_pos=0;
+    index++;
+    if(index!=tl.length)
+    {
+      str_length=tl[index].length;
+      setTimeout("password()",2000);
+    }
+  } else
+    setTimeout("password()",speed);
+}
+//-->
+</script>
+
+
+</head>
+<body onLoad=password()>
+
+<script language=JavaScript>
+{
+var a="greyhat";
+function check()
+{
+if (document.a.c.value == a)
+{
+document.location.href="http://www.hackertest.net/"+document.a.c.value+".htm";//paste level two link
+}
+else
+{
+alert ("Try again");
+}
+}
+}
+</script>
+
+<h1>Welcome all to GrayHat 1.0</h1>
+
+<p>Brute Force</p>
+
+
+
+<form style="margin-top:-10px;"><textarea rows=15 cols=155 STYLE="width: 600px;height:300px;background: #000;padding:30px;font-size: 9pt;font-family: fixedsys, LucidaTerminal, monospace;color: #909090;text-align: left;overflow:auto;border: 1px"></textarea></form>
+
+<br><br>
+<br><br>
+<br><br>
+
+<h1>Level 1</h1>
+
+<br><br>
+
+Hackers solve problems and build things, and they believe in freedom and voluntary mutual help. To be accepted as a hacker, you have to behave as though you have this kind of attitude yourself. And to behave as though you have the attitude, you have to really believe the attitude.
+<br><br>
+
+<div align="center">
+<center>
+<table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="15%" id="AutoNumber4">
+<tr>
+<td width="100%">
+<p align="center"><font size="1" face="Tahoma"><br>
+</font><font size="2" face="Tahoma">Password:</font><form name="a" action="javascript:check()">
+<p align="center">
+<input type="login" name="c" maxlength="25" size="16"><br>
+<br>
+<input type="submit" value=" Log In "></p>
+</form></p>
+</td>
+</tr>
+</center>
+</table>
+</div>
+</font></b></p>
+
+</script>
+
+
+
+</body>
+</html>
